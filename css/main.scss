@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  .first_header {
+    display: flex;
+    .logo {
+      img {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .second_header {
+    background: #000;
+    color: #fff;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        padding: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .guide {
+    display: none;
+  }
+}

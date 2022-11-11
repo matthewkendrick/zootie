@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .first_header {
+  display: flex;
+}
+header .first_header .logo img {
+  width: 60%;
+  margin: 0 auto;
+}
+header .second_header {
+  background: #000;
+  color: #fff;
+}
+header .second_header ul {
+  display: flex;
+}
+header .second_header ul li {
+  list-style: none;
+  padding: 16px;
+}
+
+@media (max-width: 600px) {
+  .guide {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
