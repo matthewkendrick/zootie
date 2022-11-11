@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,25 +6,144 @@
 
 header .first_header {
   display: flex;
+  padding: 10px 0 20px;
+}
+header .first_header .hamburgar {
+  width: 25%;
+}
+header .first_header .logo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 header .first_header .logo img {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
+}
+header .first_header .cart {
+  position: absolute;
+  right: 10px;
 }
 header .second_header {
   background: #000;
   color: #fff;
+  font-size: 16px;
 }
 header .second_header ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .second_header ul li {
   list-style: none;
   padding: 16px;
 }
 
-@media (max-width: 600px) {
-  .guide {
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  left: 13px;
+  top: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  left: 6px;
+  background: #555;
+  transition: 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger.active span:nth-child(1),
+.hamburger.active span:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(4px);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-16px) rotate(90deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #000;
+  background: #fff;
+  text-align: center;
+  transform: translateX(100%);
+  transition: all 0.9s;
+  width: 100%;
+}
+
+nav.globalMenuSp ul {
+  background: #ccc;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #000;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  transform: translateX(0%);
+}
+
+@media (max-width: 650px) {
+  .hidden {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
