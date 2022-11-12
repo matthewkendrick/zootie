@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", sans-serif;
 }
 
 header .first_header {
@@ -14,7 +14,7 @@ header .first_header {
   width: 100%;
   background: #eee;
   box-sizing: border-box;
-  padding: 20px 0;
+  padding: 16px 0;
 }
 header .first_header .logo {
   text-align: center;
@@ -28,7 +28,7 @@ header .first_header .logo img {
 }
 header .first_header .cart {
   position: absolute;
-  top: 8px;
+  top: 0;
   right: 10px;
   font-size: 32px;
 }
@@ -142,7 +142,14 @@ body .second_header ul li {
   list-style: none;
   padding: 16px;
 }
-body .btn {
+body main .slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+body main .slideshow .btn {
   display: inline-block;
   padding: 13px 20px;
   color: #fff;
@@ -157,7 +164,7 @@ body .btn {
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
 }
-body .btn::before {
+body main .slideshow .btn::before {
   content: "";
   display: block;
   position: absolute;
@@ -170,42 +177,35 @@ body .btn::before {
   opacity: 0;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
 }
-body .btn::after {
+body main .slideshow .btn::after {
   transition: border 0.1s linear 0.05s;
 }
-body .btn .btn-inner {
+body main .slideshow .btn .btn-inner {
   position: relative;
   z-index: 2;
 }
-body .btn:hover {
+body main .slideshow .btn:hover {
   color: #373737;
   transition: color 0.1s linear 0s;
 }
-body .btn:hover::before {
+body main .slideshow .btn:hover::before {
   top: 0;
   height: 100%;
   opacity: 1;
   transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
 }
-body .btn:hover::after {
+body main .slideshow .btn:hover::after {
   border-color: #373737;
   transition: border 0.1s linear 0s;
 }
-body .slideshow {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-}
-body .slideshow .slideshow-inner {
+body main .slideshow .slideshow-inner {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-body .slideshow .slides {
+body main .slideshow .slides {
   position: absolute;
   top: 0;
   left: 0;
@@ -213,7 +213,7 @@ body .slideshow .slides {
   height: 100%;
   z-index: 1;
 }
-body .slideshow .slide {
+body main .slideshow .slide {
   display: none;
   overflow: hidden;
   position: absolute;
@@ -225,16 +225,16 @@ body .slideshow .slide {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-body .slideshow .slide.is-active {
+body main .slideshow .slide.is-active {
   display: block;
 }
-body .slideshow .slide.is-loaded {
+body main .slideshow .slide.is-loaded {
   opacity: 1;
 }
-body .slideshow .slide .caption {
+body main .slideshow .slide .caption {
   padding: 0 100px;
 }
-body .slideshow .slide .image-container {
+body main .slideshow .slide .image-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -245,7 +245,7 @@ body .slideshow .slide .image-container {
   background-size: cover;
   image-rendering: optimizeQuality;
 }
-body .slideshow .slide .image-container::before {
+body main .slideshow .slide .image-container::before {
   content: "";
   display: block;
   position: absolute;
@@ -255,14 +255,14 @@ body .slideshow .slide .image-container::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-body .slideshow .slide .image {
+body main .slideshow .slide .image {
   width: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
 }
-body .slideshow .slide-content {
+body main .slideshow .slide-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -275,27 +275,27 @@ body .slideshow .slide-content {
   justify-content: center;
   align-items: center;
 }
-body .slideshow .slide .title {
+body main .slideshow .slide .title {
   margin: 0 auto 15px;
   max-width: 1000px;
   font: 300 50px/1.2 "Oswald", sans-serif;
   letter-spacing: 0.35em;
   text-transform: uppercase;
 }
-body .slideshow .slide .text {
+body main .slideshow .slide .text {
   margin: 0 auto;
   max-width: 1000px;
   font-size: 18px;
   line-height: 1.4;
 }
-body .slideshow .slide .btn {
+body main .slideshow .slide .btn {
   margin: 15px 0 0;
   border-color: #fff;
 }
-body .slideshow .slide .btn::before {
+body main .slideshow .slide .btn::before {
   background: #fff;
 }
-body .slideshow .pagination {
+body main .slideshow .pagination {
   position: absolute;
   bottom: 35px;
   left: 0;
@@ -305,7 +305,7 @@ body .slideshow .pagination {
   z-index: 2;
   text-align: center;
 }
-body .slideshow .pagination .item {
+body main .slideshow .pagination .item {
   display: inline-block;
   padding: 15px 5px;
   position: relative;
@@ -315,10 +315,10 @@ body .slideshow .pagination .item {
   text-indent: -999em;
   z-index: 1;
 }
-body .slideshow .pagination .item + .page {
+body main .slideshow .pagination .item + .page {
   margin-left: -2px;
 }
-body .slideshow .pagination .item::before {
+body main .slideshow .pagination .item::before {
   content: "";
   display: block;
   position: absolute;
@@ -329,16 +329,16 @@ body .slideshow .pagination .item::before {
   background: rgba(255, 255, 255, 0.5);
   transition: background 0.2s ease;
 }
-body .slideshow .pagination .item::after {
+body main .slideshow .pagination .item::after {
   width: 0;
   background: #fff;
   z-index: 2;
   transition: width 0.2s ease;
 }
-body .slideshow .pagination .item:hover::before, body .slideshow .pagination .item.is-active::before {
+body main .slideshow .pagination .item:hover::before, body main .slideshow .pagination .item.is-active::before {
   background-color: #fff;
 }
-body .slideshow .arrows .arrow {
+body main .slideshow .arrows .arrow {
   margin: -33px 0 0;
   padding: 20px;
   position: absolute;
@@ -346,19 +346,19 @@ body .slideshow .arrows .arrow {
   cursor: pointer;
   z-index: 3;
 }
-body .slideshow .arrows .prev {
+body main .slideshow .arrows .prev {
   left: 30px;
 }
-body .slideshow .arrows .prev:hover .svg {
+body main .slideshow .arrows .prev:hover .svg {
   left: -10px;
 }
-body .slideshow .arrows .next {
+body main .slideshow .arrows .next {
   right: 30px;
 }
-body .slideshow .arrows .next:hover .svg {
+body main .slideshow .arrows .next:hover .svg {
   left: 10px;
 }
-body .slideshow .arrows .svg {
+body main .slideshow .arrows .svg {
   position: relative;
   left: 0;
   width: 14px;
