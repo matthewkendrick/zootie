@@ -366,6 +366,23 @@ body main .slideshow .arrows .svg {
   fill: #fff;
   transition: left 0.2s ease;
 }
+body main .information {
+  margin: 56px 0;
+}
+body main .information .infoItem {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid blue;
+  color: #4473a5;
+  background: #cfe1fb;
+}
+body main .information .infoItem .date {
+  font-size: 12px;
+}
+body main .information .infoItem .text {
+  font-size: 14px;
+}
 
 @media (max-width: 650px) {
   .hidden {

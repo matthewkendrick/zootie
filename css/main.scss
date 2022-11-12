@@ -401,6 +401,23 @@ body {
         }
       }
     }
+    .information {
+      margin: 56px 0;
+      .infoItem {
+        margin: 16px;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid blue;
+        color: #4473a5;
+        background: #cfe1fb;
+        .date {
+          font-size: 12px;
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
   } 
 }
 
