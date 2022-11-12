@@ -12,8 +12,8 @@ header .first_header {
   top: 0;
   left: 0;
   width: 100%;
-  background: #eee;
   box-sizing: border-box;
+  background: #fff;
   padding: 16px 0;
 }
 header .first_header .logo {
@@ -23,7 +23,7 @@ header .first_header .logo {
   margin: 0 auto;
 }
 header .first_header .logo img {
-  width: 40%;
+  width: 160px;
   margin: 0 auto;
 }
 header .first_header .cart {
@@ -123,8 +123,8 @@ header .first_header .hamburger_box nav.globalMenuSp.active {
 }
 
 body {
-  font: 14px/2 "Open sans", sans-serif;
-  letter-spacing: 0.05em;
+  position: relative;
+  top: 70px;
 }
 body .second_header {
   position: relative;
@@ -378,10 +378,19 @@ body main .information .infoItem {
   background: #cfe1fb;
 }
 body main .information .infoItem .date {
-  font-size: 12px;
+  font-size: 8px;
 }
 body main .information .infoItem .text {
-  font-size: 14px;
+  font-size: 12px;
+}
+
+footer {
+  margin-top: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #000;
+  text-align: center;
 }
 
 @media (max-width: 650px) {

@@ -19,8 +19,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: #eee;
     box-sizing: border-box;
+    background: #fff;
     padding: 16px 0;
     .logo {
       text-align: center;
@@ -28,7 +28,7 @@ header {
       align-items: center;
       margin: 0 auto;
       img {
-        width: 40%;
+        width: 160px;
         margin: 0 auto;
       }
     }
@@ -155,8 +155,8 @@ header {
 }
 
 body {
-  font: 14px/2 "Open sans",sans-serif;
-  letter-spacing: 0.05em;
+  position: relative;
+  top: 70px;
   .second_header {
     position: relative;
     top: 64px;
@@ -411,14 +411,21 @@ body {
         color: #4473a5;
         background: #cfe1fb;
         .date {
-          font-size: 12px;
+          font-size: 8px;
         }
         .text {
-          font-size: 14px;
+          font-size: 12px;
         }
       }
     }
   } 
+}
+
+footer {
+  margin-top: auto;
+  height: fit-content;
+  background: #000;
+  text-align: center;
 }
 
 @media (max-width: 650px) {
