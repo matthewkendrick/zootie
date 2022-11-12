@@ -423,9 +423,13 @@ body {
 
 footer {
   margin-top: auto;
+  padding: 24px 0;
   height: fit-content;
   background: #000;
   text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 10px;
 }
 
 @media (max-width: 650px) {
