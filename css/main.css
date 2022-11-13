@@ -257,26 +257,26 @@ body main .search .search_bar .search_container button {
   outline: 0;
   font-size: 16px;
   padding: 12px 24px;
+  vertical-align: middle;
 }
 body main .search .search_bar .search_container input {
   width: 50%;
   background: #eee;
   border-right: none;
-  border-radius: 32px 0 0 32px;
+  border-radius: 16px 0 0 16px;
 }
 body main .search .search_bar .search_container button {
-  cursor: pointer;
-  font-family: FontAwesome;
   border-left: none;
-  border-radius: 0 32px 32px 0;
+  border-radius: 0 16px 16px 0;
   color: #969696;
   margin-left: -6px;
   background: rgba(127, 191, 255, 0.5);
+  transition: all 0.3s;
 }
 body main .search .search_bar .search_container button:hover {
+  cursor: pointer;
   color: #fff;
   background: #3879D9;
-  transition: all 0.3s;
 }
 body main .information {
   margin: 56px 0;

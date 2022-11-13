@@ -280,26 +280,25 @@ body {
             outline: 0;
             font-size: 16px;
             padding: 12px 24px;
+            vertical-align: middle;
           }
           input {
             width: 50%;
             background: #eee;
             border-right: none;
-            border-radius: 32px 0 0 32px;
+            border-radius: 16px 0 0 16px;
           }
           button {
-            cursor: pointer;
-            font-family: FontAwesome;
             border-left: none;
-            border-radius: 0 32px 32px 0;
+            border-radius: 0 16px 16px 0;
             color: #969696;
             margin-left: -6px;
             background: rgba($color: #7fbfff, $alpha: 0.5);
-            // vertical-align: middle;
+            transition: all 0.3s;
             &:hover {
+              cursor: pointer;
               color: #fff;
               background: #3879D9;
-              transition: all 0.3s;
             }
           }
         }
