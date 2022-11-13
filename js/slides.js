@@ -132,4 +132,4 @@ setInterval(() => {
   }
   count++;
   console.log(count);
-}, 1500);
+}, 2000);
