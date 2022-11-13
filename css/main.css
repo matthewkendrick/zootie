@@ -256,7 +256,7 @@ body main .search .search_bar .search_container button {
   border: 2px solid #7fbfff;
   outline: 0;
   font-size: 16px;
-  padding: 16px 24px;
+  padding: 8px 24px;
   vertical-align: middle;
 }
 body main .search .search_bar .search_container input {
