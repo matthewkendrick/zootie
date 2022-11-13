@@ -30,11 +30,13 @@ body .myPage_mainItem .subItem a {
   color: #555;
   text-decoration: none;
   font-weight: bold;
-  vertical-align: middle;
 }
 body .myPage_mainItem .subItem a p:first-child {
   padding-right: 8px;
   text-align: center;
+}
+body .myPage_mainItem .subItem i {
+  font-size: 18px;
 }
 body .myPage_mainItem .cart,
 body .myPage_mainItem .like {
@@ -55,6 +57,21 @@ body .myPage_mainItem .guide {
 }
 body .myPage_mainItem .guide a {
   border: none;
+}
+body .sns {
+  display: flex;
+  margin: 0 auto;
+}
+body .sns .snsItem {
+  margin: 0 16px;
+  font-size: 32px;
+}
+body .sns .snsItem i,
+body .sns .snsItem img {
+  color: initial;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
 }
 
 footer {

@@ -25,11 +25,13 @@ body {
         color: #555;
         text-decoration: none;
         font-weight: bold;
-        vertical-align: middle;
         p:first-child {
           padding-right: 8px;
           text-align: center;
         }
+      }
+      i {
+        font-size: 18px;
       }
     }
     .cart,
@@ -51,6 +53,21 @@ body {
       margin: 16px auto;
       a {
         border: none;
+      }
+    }
+  }
+  .sns {
+    display: flex;
+    margin: 0 auto;
+    .snsItem {
+      margin: 0 16px;
+      font-size: 32px;
+      i,
+      img {
+        color: initial;
+        vertical-align: middle;
+        width: 48px;
+        height: 48px;
       }
     }
   }
