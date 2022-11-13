@@ -279,22 +279,25 @@ body {
             border: 2px solid #7fbfff;
             outline: 0;
             font-size: 16px;
-            padding: 8px 24px;
             vertical-align: middle;
           }
           input {
             width: 50%;
+            max-width: 320px;
             background: #eee;
             border-right: none;
             border-radius: 32px 0 0 32px;
+            padding: 12px 24px;
           }
           button {
             border-left: none;
             border-radius: 0 32px 32px 0;
             color: #969696;
             margin-left: -6px;
+            padding: 6px 24px;
             background: rgba($color: #7fbfff, $alpha: 0.5);
             transition: all 0.3s;
+            font-size: 24px;
             &:hover {
               cursor: pointer;
               color: #fff;
@@ -305,7 +308,8 @@ body {
       }
     }
     .information {
-      margin: 56px 0;
+      margin: 56px auto;
+      max-width: 640px;
       .infoItem {
         margin: 16px;
         padding: 16px;
