@@ -142,229 +142,116 @@ body .second_header ul li {
   list-style: none;
   padding: 16px;
 }
-body main .slideshow {
+body main .slideShow .wrapper {
+  max-width: 100vw;
   overflow: hidden;
-  position: relative;
   width: 100%;
-  height: 100vh;
-  z-index: 1;
-}
-body main .slideshow .btn {
-  display: inline-block;
-  padding: 13px 20px;
-  color: #fff;
-  text-decoration: none;
   position: relative;
-  background: transparent;
-  border: 1px solid #e1e1e1;
-  font: 12px/1.2 "Oswald", sans-serif;
-  letter-spacing: 0.4em;
-  text-align: center;
-  text-indent: 2px;
-  text-transform: uppercase;
-  transition: color 0.1s linear 0.05s;
+  height: 600px;
 }
-body main .slideshow .btn::before {
+body main .slideShow .next,
+body main .slideShow .prev {
+  width: 40px;
+  height: 48px;
+  position: absolute;
+  bottom: 50%;
+  transition: all 0.3s;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+}
+body main .slideShow .next:after,
+body main .slideShow .prev:after {
   content: "";
   display: block;
+  width: 16px;
+  height: 16px;
   position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #e1e1e1;
-  z-index: 1;
-  opacity: 0;
-  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
 }
-body main .slideshow .btn::after {
-  transition: border 0.1s linear 0.05s;
+body main .slideShow .next i,
+body main .slideShow .prev i {
+  padding: 16px 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
-body main .slideshow .btn .btn-inner {
-  position: relative;
-  z-index: 2;
-}
-body main .slideshow .btn:hover {
-  color: #373737;
-  transition: color 0.1s linear 0s;
-}
-body main .slideshow .btn:hover::before {
-  top: 0;
-  height: 100%;
-  opacity: 1;
-  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
-}
-body main .slideshow .btn:hover::after {
-  border-color: #373737;
-  transition: border 0.1s linear 0s;
-}
-body main .slideshow .slideshow-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-body main .slideshow .slides {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-body main .slideshow .slide {
-  display: none;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-body main .slideshow .slide.is-active {
-  display: block;
-}
-body main .slideshow .slide.is-loaded {
-  opacity: 1;
-}
-body main .slideshow .slide .caption {
-  padding: 0 100px;
-}
-body main .slideshow .slide .image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  z-index: 1;
-  background-size: cover;
-  image-rendering: optimizeQuality;
-}
-body main .slideshow .slide .image-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-body main .slideshow .slide .image {
-  width: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-}
-body main .slideshow .slide-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+body main .slideShow .next i:hover,
+body main .slideShow .prev i:hover {
+  transition: all 0.4s;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
-  text-align: center;
+}
+body main .slideShow .next {
+  right: 16px;
+}
+body main .slideShow .prev {
+  left: 16px;
+}
+body main .slideShow .slider {
+  width: 400vw;
+  display: flex;
+  margin: 0 auto;
+}
+body main .slideShow .slider1 {
+  transition: transform 1s;
+}
+body main .slideShow .slider2 {
+  transition: transform 1s;
+}
+body main .slideShow .slider3 {
+  transition: transform 1s;
+}
+body main .slideShow .slider4 {
+  transition: transform 1s;
+}
+body main .slideShow .slider1 {
+  transform: translateX(0);
+}
+body main .slideShow .slider2 {
+  transform: translateX(-100vw);
+}
+body main .slideShow .slider3 {
+  transform: translateX(-200vw);
+}
+body main .slideShow .slider4 {
+  transform: translateX(-300vw);
+}
+body main .slideShow .content {
+  width: 100%;
+  max-width: 100vw;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body main .slideshow .slide .title {
-  margin: 0 auto 15px;
-  max-width: 1000px;
-  font: 300 50px/1.2 "Oswald", sans-serif;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
+body main .slideShow .content img {
+  width: 100vw;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
-body main .slideshow .slide .text {
-  margin: 0 auto;
-  max-width: 1000px;
-  font-size: 18px;
-  line-height: 1.4;
-}
-body main .slideshow .slide .btn {
-  margin: 15px 0 0;
-  border-color: #fff;
-}
-body main .slideshow .slide .btn::before {
-  background: #fff;
-}
-body main .slideshow .pagination {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
+body main .slideShow .indicator {
   width: 100%;
-  height: 12px;
-  cursor: default;
-  z-index: 2;
-  text-align: center;
-}
-body main .slideshow .pagination .item {
-  display: inline-block;
-  padding: 15px 5px;
-  position: relative;
-  width: 46px;
-  height: 32px;
-  cursor: pointer;
-  text-indent: -999em;
-  z-index: 1;
-}
-body main .slideshow .pagination .item + .page {
-  margin-left: -2px;
-}
-body main .slideshow .pagination .item::before {
-  content: "";
-  display: block;
   position: absolute;
-  top: 15px;
-  left: 5px;
-  width: 36px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.5);
-  transition: background 0.2s ease;
+  bottom: 10px;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
 }
-body main .slideshow .pagination .item::after {
-  width: 0;
-  background: #fff;
-  z-index: 2;
-  transition: width 0.2s ease;
-}
-body main .slideshow .pagination .item:hover::before, body main .slideshow .pagination .item.is-active::before {
-  background-color: #fff;
-}
-body main .slideshow .arrows .arrow {
-  margin: -33px 0 0;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  z-index: 3;
-}
-body main .slideshow .arrows .prev {
-  left: 30px;
-}
-body main .slideshow .arrows .prev:hover .svg {
-  left: -10px;
-}
-body main .slideshow .arrows .next {
-  right: 30px;
-}
-body main .slideshow .arrows .next:hover .svg {
-  left: 10px;
-}
-body main .slideshow .arrows .svg {
+body main .slideShow .indicator li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   position: relative;
-  left: 0;
-  width: 14px;
-  height: 26px;
-  fill: #fff;
-  transition: left 0.2s ease;
+  list-style: none;
+  border: 1px #000 solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+body main .slideShow #list1 {
+  background-color: #000;
 }
 body main .information {
   margin: 56px 0;
