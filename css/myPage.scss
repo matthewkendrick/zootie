@@ -58,7 +58,7 @@ body {
       }
     }
     .guide {
-      margin: 16px auto;
+      margin: auto 16px;
       a {
         border: none;
         &:hover {
@@ -90,7 +90,7 @@ body {
   }
   .sns {
     display: flex;
-    margin: 16px auto;
+    margin: 32px auto;
     .snsItem {
       margin: 0 16px;
       font-size: 32px;

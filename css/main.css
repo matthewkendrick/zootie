@@ -275,8 +275,6 @@ body main .search .search_bar .search_container button {
 }
 body main .search .search_bar .search_container button:hover {
   cursor: pointer;
-  color: #fff;
-  background: #555;
 }
 body main .information {
   margin: 56px auto;

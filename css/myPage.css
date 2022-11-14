@@ -62,7 +62,7 @@ body .myPage_mainItem .like a i {
   color: #ed6589;
 }
 body .myPage_mainItem .guide {
-  margin: 16px auto;
+  margin: auto 16px;
 }
 body .myPage_mainItem .guide a {
   border: none;
@@ -93,7 +93,7 @@ body .app {
 }
 body .sns {
   display: flex;
-  margin: 16px auto;
+  margin: 32px auto;
 }
 body .sns .snsItem {
   margin: 0 16px;
