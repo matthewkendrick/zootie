@@ -44,21 +44,22 @@ body .myPage_mainItem .subItem i {
   font-size: 18px;
 }
 body .myPage_mainItem .cart,
-body .myPage_mainItem .like {
+body .myPage_mainItem .like,
+body .myPage_mainItem .books {
+  width: 300px;
   margin: 16px auto;
 }
 body .myPage_mainItem .cart a,
-body .myPage_mainItem .like a {
-  padding: 16px 100px;
+body .myPage_mainItem .like a,
+body .myPage_mainItem .books a {
+  justify-content: center;
+  padding: 16px;
 }
 body .myPage_mainItem .like a {
-  padding: 16px 85px;
+  padding: 16px;
 }
 body .myPage_mainItem .like a i {
   color: #ed6589;
-}
-body .myPage_mainItem .like .books {
-  padding: 16px 85px;
 }
 body .myPage_mainItem .guide {
   margin: 16px auto;

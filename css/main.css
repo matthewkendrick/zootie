@@ -415,7 +415,7 @@ body main .styling #mirror-content:before {
 }
 body main .styleMore {
   position: relative;
-  left: 8px;
+  left: 4px;
   bottom: 72px;
   width: -webkit-fit-content;
   width: -moz-fit-content;

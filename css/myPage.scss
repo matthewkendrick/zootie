@@ -40,21 +40,21 @@ body {
       }
     }
     .cart,
-    .like {
+    .like,
+    .books {
+      width: 300px;
       margin: 16px auto;
       a {
-        padding: 16px 100px;
+        justify-content: center;
+        padding: 16px;
       }
     }
     .like {
       a {
-        padding: 16px 85px;
+        padding: 16px;
         i {
           color: #ed6589;
         }
-      }
-      .books {
-        padding: 16px 85px;
       }
     }
     .guide {

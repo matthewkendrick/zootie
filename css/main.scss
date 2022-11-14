@@ -296,7 +296,6 @@ body {
             color: #000;
             margin-left: -6px;
             padding: 6px 24px;
-            // background: rgba($color: #666, $alpha: 0.5);
             transition: all 0.3s;
             font-size: 24px;
             &:hover {
@@ -446,7 +445,7 @@ body {
     }
     .styleMore {
       position: relative;
-      left: 8px;
+      left: 4px;
       bottom: 72px;
       width: fit-content;
       letter-spacing: 2px;
