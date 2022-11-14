@@ -71,19 +71,6 @@ body .contents {
   margin: 16px auto 0;
   text-align: center;
 }
-body .contents .contentsTitle {
-  color: #555;
-  letter-spacing: 4px;
-}
-body .contents .contentsTitle p:first-child {
-  font-size: 20px;
-}
-body .contents .contentsTitle p:nth-child(3) {
-  width: 80px;
-  margin: 8px auto;
-  border: 1px solid #000;
-  border-radius: 16px;
-}
 body .contents .contentsItem {
   display: flex;
 }

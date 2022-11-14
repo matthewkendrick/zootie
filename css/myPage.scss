@@ -68,19 +68,6 @@ body {
   .contents {
     margin: 16px auto 0;
     text-align: center;
-    .contentsTitle {
-      color: #555;
-      letter-spacing: 4px;
-      p:first-child {
-        font-size: 20px;
-      }
-      p:nth-child(3) {
-        width: 80px;
-        margin: 8px auto;
-        border: 1px solid #000;
-        border-radius: 16px;
-      }
-    }
     .contentsItem {
       display: flex;
       img {
