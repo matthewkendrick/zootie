@@ -65,11 +65,41 @@ body {
       }
     }
   }
+  .contents {
+    margin: 16px auto 0;
+    text-align: center;
+    .contentsTitle {
+      color: #555;
+      letter-spacing: 4px;
+      p:first-child {
+        font-size: 20px;
+      }
+      p:nth-child(3) {
+        width: 80px;
+        margin: 8px auto;
+        border: 1px solid #000;
+        border-radius: 16px;
+      }
+    }
+    .contentsItem {
+      display: flex;
+      img {
+        width: 120px;
+        height: 120px;
+        margin: 16px;
+        border-radius: 50%;
+        transition: all 0.4s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
   .sns {
     display: flex;
     margin: 0 auto;
     .snsItem {
-      margin: 0 16px;
+      margin: 0 16px 32px;
       font-size: 32px;
       i,
       img {
