@@ -232,7 +232,6 @@ body main .search .search_header {
   background: #eee;
   color: #555;
   font-size: 16px;
-  letter-spacing: 2px;
 }
 body main .search .search_header ul {
   display: flex;
