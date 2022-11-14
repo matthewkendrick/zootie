@@ -57,6 +57,9 @@ body .myPage_mainItem .like a {
 body .myPage_mainItem .like a i {
   color: #ed6589;
 }
+body .myPage_mainItem .like .books {
+  padding: 16px 85px;
+}
 body .myPage_mainItem .guide {
   margin: 16px auto;
 }
