@@ -393,7 +393,7 @@ body main .styling #mirror-content {
   display: flex;
   justify-content: center;
 }
-body main .styling #mirror-content:before {
+body main .styling #mirror-content:after {
   position: absolute;
   content: "click me";
   font-family: sans-serif;
@@ -411,19 +411,17 @@ body main .styling #mirror-content:before {
   background: #000;
   border-radius: 32px;
 }
-body main .styleMore {
+body main .stylingMore {
   position: relative;
-  left: 4px;
-  bottom: 72px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  letter-spacing: 2px;
+  top: 760px;
   text-align: center;
-  color: #fff;
-  background: #333;
-  margin: 0 auto;
-  padding: 16px 32px;
+  z-index: 1;
+}
+body main .stylingMore a {
+  text-decoration: none;
+  color: #eee;
+  background: #444;
+  padding: 16px 24px;
   border-radius: 8px;
 }
 body .contents {
@@ -431,11 +429,10 @@ body .contents {
   text-align: center;
 }
 body .contents .contentsItem {
-  margin: 0 auto 32px;
+  min-height: 160px;
+  padding-top: 16px;
 }
 body .contents .newItem {
-  margin-bottom: -8px;
-  padding: 32px 0;
   background: #bd979f;
 }
 body .title {

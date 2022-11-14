@@ -88,6 +88,9 @@ body .contents .contentsItem img {
 body .contents .contentsItem img:hover {
   opacity: 0.8;
 }
+body .contents .eventItems img:hover {
+  transform: rotateY(360deg);
+}
 body .app {
   margin: 0 auto;
 }
@@ -107,6 +110,6 @@ body .sns .snsItem img {
   height: 48px;
 }
 
-footer {
+j footer {
   margin-top: auto;
 }/*# sourceMappingURL=myPage.css.map */

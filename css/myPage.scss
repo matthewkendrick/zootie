@@ -84,6 +84,13 @@ body {
         }
       }
     }
+    .eventItems {
+      img {
+        &:hover {
+          transform: rotateY(360deg);
+        }
+      }
+    }
   }
   .app {
     margin: 0 auto;
@@ -103,7 +110,7 @@ body {
       }
     }
   }
-}
+}j
 
 footer {
   margin-top: auto;
