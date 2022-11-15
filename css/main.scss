@@ -9,10 +9,9 @@
     "MS Pゴシック",
     sans-serif
   ;
-}
-
-*::-webkit-scrollbar {
-  display: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 header {
@@ -301,51 +300,14 @@ body {
           }
         }
       }
-      .search_bar {
-        text-align: center;
-        padding: 48px 0;
-        .search_container {
-          box-sizing: border-box;
-          input,
-          button {
-            border: 2px solid #222;
-            outline: 0;
-            font-size: 16px;
-            vertical-align: middle;
-          }
-          input {
-            width: 50%;
-            max-width: 320px;
-            background: #eee;
-            border-right: none;
-            border-radius: 32px 0 0 32px;
-            padding: 12px 24px;
-          }
-          button {
-            border-left: none;
-            border-radius: 0 32px 32px 0;
-            color: #000;
-            background: #eee;
-            margin-left: -6px;
-            padding: 6px 24px;
-            transition: all 0.3s;
-            font-size: 24px;
-            &:hover {
-              cursor: pointer;
-              i {
-                transform: ro;
-              }
-            }
-          }
-        }
-        .letszootie {
-          margin: 24px 0 -24px;
-          font-size: 24px;
-          font-family: Chalkduster;
-          transform: rotate(-4deg);
-        }
+      .letszootie {
+        margin: 24px 0 -24px;
+        font-size: 24px;
+        font-family: Chalkduster;
+        transform: rotate(-4deg);
       }
     }
+
     .information {
       margin: 56px auto;
       max-width: 6480px;
@@ -518,6 +480,46 @@ body {
       margin: 8px auto;
       border: 1px solid #000;
       border-radius: 16px;
+    }
+  }
+}
+
+.search_bar {
+  text-align: center;
+  padding: 48px 0;
+  font-size: 16px;
+  .search_container {
+    box-sizing: border-box;
+    input,
+    button {
+      border: 2px solid #222;
+      outline: 0;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+    input {
+      width: 50%;
+      max-width: 320px;
+      background: #eee;
+      border-right: none;
+      border-radius: 32px 0 0 32px;
+      padding: 12px 24px;
+    }
+    button {
+      border-left: none;
+      border-radius: 0 32px 32px 0;
+      color: #000;
+      background: #eee;
+      margin-left: -6px;
+      padding: 6px 24px;
+      transition: all 0.3s;
+      font-size: 24px;
+      &:hover {
+        cursor: pointer;
+        i {
+          transform: ro;
+        }
+      }
     }
   }
 }
