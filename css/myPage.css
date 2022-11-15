@@ -76,6 +76,7 @@ body .contents {
   text-align: center;
 }
 body .contents .eventItems {
+  border-radius: 160px;
   display: flex;
   width: 80vw;
   overflow: scroll;
