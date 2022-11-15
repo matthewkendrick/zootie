@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
   <script src="https://kit.fontawesome.com/051eb814e7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../css/main.css">
@@ -32,18 +32,35 @@
           </div>
           <div class="listItem">
             <li>
-              <p>カテゴリから探す</p>
-              <a href="#">トップス</a>
-              <a href="#">ボトムス</a>
-              <a href="#">アウター</a>
-              <a href="#">ワンピース</a>
-              <a href="#">オールインワン</a>
+              <div class="accordionMenu">
+                <div class="accordion_title">
+                <div  class="title title1">
+                  <p>カテゴリから探す</p>
+                </div>
+                </div>
+                <div class="accordion_inner">
+                  <a href="#">トップス</a>
+                  <a href="#">ボトムス</a>
+                  <a href="#">アウター</a>
+                  <a href="#">ワンピース</a>
+                  <a href="#">オールインワン</a>
+                </div>
+              </div>
             </li>
             <li>
-              <p>ブランドから探す</p>
-              <a href="#">オリジナルブランド</a>
-              <a href="#">セレクトブランド</a>
+              <div class="accordionMenu">
+                <div class="accordion_title">
+                <div  class="title title1">
+                  <p>ブランドから探す</p>
+                </div>
+                </div>
+                <div class="accordion_inner">
+                  <a href="#">オリジナルブランド</a>
+                  <a href="#">セレクトブランド</a>
+                </div>
+              </div>
             </li>
+            <script src="../js/accordion.js"></script>
           </div>
         </ul>
         <footer>
