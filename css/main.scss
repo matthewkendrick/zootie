@@ -11,10 +11,8 @@
   ;
 }
 
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  // background: #000;
+*::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -148,6 +146,9 @@ header {
                 border-bottom: 1px dashed #999;
                 padding: 8px 0;
                 font-weight: normal;
+                font-size: 20px;
+                letter-spacing: 4px;
+                font-family: "Hiragino Maru Gothic Pro";
               }
               a {
                 display: block;
@@ -183,8 +184,11 @@ header {
 }
 
 body {
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   top: 62px;
+  box-sizing: content-box;
   main {
     .slideShow {
       .wrapper {

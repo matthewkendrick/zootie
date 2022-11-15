@@ -5,9 +5,8 @@
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", sans-serif;
 }
 
-body {
-  max-width: 1200px;
-  margin: 0 auto;
+*::-webkit-scrollbar {
+  display: none;
 }
 
 header .first_header {
@@ -125,6 +124,9 @@ header .first_header .hamburger_box nav.globalMenuSp ul li p {
   border-bottom: 1px dashed #999;
   padding: 8px 0;
   font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: "Hiragino Maru Gothic Pro";
 }
 header .first_header .hamburger_box nav.globalMenuSp ul li a {
   display: block;
@@ -153,8 +155,11 @@ header .first_header .hamburger_box nav footer {
 }
 
 body {
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
   top: 62px;
+  box-sizing: content-box;
 }
 body main .slideShow .wrapper {
   max-width: 100vw;
