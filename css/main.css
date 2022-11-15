@@ -461,16 +461,37 @@ body main .stylingMore a {
   padding: 16px 24px;
   border-radius: 8px;
 }
+body main .shops {
+  text-align: center;
+}
+body main .shops .shop {
+  max-width: 100%;
+  padding: 0 16px;
+  display: flex;
+  margin: 0 auto 32px;
+}
+body main .shops .shop .describe {
+  text-align: left;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 2;
+}
+body main .shops .shop .describe .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+body main .shops img {
+  width: 40%;
+}
+body main .shops .sponsor {
+  padding: 0 0 32px;
+}
 body .contents {
   margin: 0 auto;
   text-align: center;
 }
 body .contents .contentsItem {
-  min-height: 160px;
-  padding-top: 16px;
-}
-body .contents .contentsItem .title {
-  padding-bottom: 24px;
+  min-height: 240px;
 }
 body .contents .newItem {
   background: #bd979f;
@@ -536,6 +557,7 @@ body .contents .more a {
 body .title {
   color: #555;
   letter-spacing: 4px;
+  padding: 32px 0;
 }
 body .title p:first-child {
   font-size: 20px;
