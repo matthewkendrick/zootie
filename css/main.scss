@@ -122,33 +122,38 @@ header {
           transition: all .9s;
           width: 100%;
           ul {
-            // background: #ccc;
             margin: 48px auto;
             padding: 0;
             width: 100%;
             li {
               list-style-type: none;
               padding: 0;
-              width: 100%;
+              margin: 0 auto;
+              width: 90%;
+              text-align: center;
               border-bottom: 1px solid #555;
-              // &:last-child {
-              //   padding-bottom: 0;
-              //   border-bottom: none;
-              // }
-              &:hover{
-                background :#ddd;
+              p {
+                text-align-last: left;
               }
               a {
                 display: block;
                 color: #000;
                 padding: 1em 0;
                 text-decoration :none;
+                &:hover{
+                  background :#ddd;
+                }
               }
             }
           }
           &.active {
             transform: translateX(0%);
           }
+        }
+        footer {
+          width: 100%;
+          position: absolute;
+          bottom: 0;
         }
       }
     }
@@ -294,12 +299,16 @@ body {
             border-left: none;
             border-radius: 0 32px 32px 0;
             color: #000;
+            background: #eee;
             margin-left: -6px;
             padding: 6px 24px;
             transition: all 0.3s;
             font-size: 24px;
             &:hover {
               cursor: pointer;
+              i {
+                transform: ro;
+              }
             }
           }
         }

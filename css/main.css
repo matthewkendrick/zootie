@@ -104,11 +104,14 @@ header .first_header .hamburger_box nav.globalMenuSp ul {
 header .first_header .hamburger_box nav.globalMenuSp ul li {
   list-style-type: none;
   padding: 0;
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
   border-bottom: 1px solid #555;
 }
-header .first_header .hamburger_box nav.globalMenuSp ul li:hover {
-  background: #ddd;
+header .first_header .hamburger_box nav.globalMenuSp ul li p {
+  -moz-text-align-last: left;
+       text-align-last: left;
 }
 header .first_header .hamburger_box nav.globalMenuSp ul li a {
   display: block;
@@ -116,8 +119,16 @@ header .first_header .hamburger_box nav.globalMenuSp ul li a {
   padding: 1em 0;
   text-decoration: none;
 }
+header .first_header .hamburger_box nav.globalMenuSp ul li a:hover {
+  background: #ddd;
+}
 header .first_header .hamburger_box nav.globalMenuSp.active {
   transform: translateX(0%);
+}
+header .first_header .hamburger_box nav footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 body {
@@ -268,6 +279,7 @@ body main .search .search_bar .search_container button {
   border-left: none;
   border-radius: 0 32px 32px 0;
   color: #000;
+  background: #eee;
   margin-left: -6px;
   padding: 6px 24px;
   transition: all 0.3s;
@@ -275,6 +287,9 @@ body main .search .search_bar .search_container button {
 }
 body main .search .search_bar .search_container button:hover {
   cursor: pointer;
+}
+body main .search .search_bar .search_container button:hover i {
+  transform: ro;
 }
 body main .information {
   margin: 56px auto;

@@ -91,9 +91,6 @@ body .contents .contentsItem img:hover {
 body .contents .eventItems img:hover {
   transform: rotateY(360deg);
 }
-body .app {
-  margin: 0 auto;
-}
 body .sns {
   display: flex;
   margin: 32px auto;
