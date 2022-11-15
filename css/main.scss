@@ -193,6 +193,7 @@ body {
         width: 100%;
         position: relative;
         height: 600px;
+        scroll-snap-type:x mandatory;
         .next,
         .prev {
           width: 40px;
@@ -333,6 +334,12 @@ body {
               }
             }
           }
+        }
+        .letszootie {
+          margin: 24px 0 -24px;
+          font-size: 24px;
+          font-family: Chalkduster;
+          transform: rotate(-4deg);
         }
       }
     }

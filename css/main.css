@@ -162,6 +162,8 @@ body main .slideShow .wrapper {
   width: 100%;
   position: relative;
   height: 600px;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 body main .slideShow .wrapper .next,
 body main .slideShow .wrapper .prev {
@@ -311,6 +313,12 @@ body main .search .search_bar .search_container button:hover {
 }
 body main .search .search_bar .search_container button:hover i {
   transform: ro;
+}
+body main .search .search_bar .letszootie {
+  margin: 24px 0 -24px;
+  font-size: 24px;
+  font-family: Chalkduster;
+  transform: rotate(-4deg);
 }
 body main .information {
   margin: 56px auto;

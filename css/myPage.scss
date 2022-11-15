@@ -71,22 +71,19 @@ body {
   .contents {
     margin: 16px auto 0;
     text-align: center;
-    .contentsItem {
+    .eventItems {
       display: flex;
+      width: 80vw;
+      overflow: scroll;
       img {
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 200px;
         margin: 16px 8px;
         border-radius: 50%;
         transition: all 0.4s;
+        object-fit: contain;
         &:hover {
           opacity: 0.8;
-        }
-      }
-    }
-    .eventItems {
-      img {
-        &:hover {
           transform: rotateY(360deg);
         }
       }
@@ -107,7 +104,7 @@ body {
       }
     }
   }
-}j
+}
 
 footer {
   margin-top: auto;

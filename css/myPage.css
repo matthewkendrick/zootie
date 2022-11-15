@@ -75,20 +75,22 @@ body .contents {
   margin: 16px auto 0;
   text-align: center;
 }
-body .contents .contentsItem {
+body .contents .eventItems {
   display: flex;
+  width: 80vw;
+  overflow: scroll;
 }
-body .contents .contentsItem img {
-  width: 120px;
-  height: 120px;
+body .contents .eventItems img {
+  width: 200px;
+  height: 200px;
   margin: 16px 8px;
   border-radius: 50%;
   transition: all 0.4s;
-}
-body .contents .contentsItem img:hover {
-  opacity: 0.8;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 body .contents .eventItems img:hover {
+  opacity: 0.8;
   transform: rotateY(360deg);
 }
 body .sns {
@@ -107,6 +109,6 @@ body .sns .snsItem img {
   height: 48px;
 }
 
-j footer {
+footer {
   margin-top: auto;
 }/*# sourceMappingURL=myPage.css.map */
