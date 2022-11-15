@@ -188,7 +188,7 @@ body {
   margin: 0 auto;
   position: relative;
   top: 62px;
-  box-sizing: content-box;
+  overflow-x: hidden;
   main {
     .slideShow {
       .wrapper {
