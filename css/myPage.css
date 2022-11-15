@@ -10,6 +10,7 @@ body {
   position: relative;
   top: 70px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 body .myPage_mainItem {
   margin: 0 auto;
