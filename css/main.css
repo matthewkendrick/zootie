@@ -163,6 +163,7 @@ header .first_header .hamburger_box nav.globalMenuSp ul .accordion_title:before 
   font-size: 24px;
 }
 header .first_header .hamburger_box nav.globalMenuSp ul .open:before {
+  color: #E4405F;
   transform: rotate(45deg);
 }
 header .first_header .hamburger_box nav.globalMenuSp ul .accordion_inner {
