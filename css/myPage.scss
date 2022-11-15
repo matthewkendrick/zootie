@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   position: relative;
   top: 70px;
+  margin: 0 auto;
   .myPage_mainItem {
     margin: 0 auto;
     .member {
@@ -74,7 +75,7 @@ body {
     .eventItems {
       border-radius: 160px;
       display: flex;
-      width: 80vw;
+      width: 480px;
       overflow: scroll;
       img {
         width: 200px;

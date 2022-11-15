@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   position: relative;
   top: 70px;
+  margin: 0 auto;
 }
 body .myPage_mainItem {
   margin: 0 auto;
@@ -78,7 +79,7 @@ body .contents {
 body .contents .eventItems {
   border-radius: 160px;
   display: flex;
-  width: 80vw;
+  width: 480px;
   overflow: scroll;
 }
 body .contents .eventItems img {
