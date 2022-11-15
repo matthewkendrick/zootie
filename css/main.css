@@ -153,6 +153,7 @@ header .first_header .hamburger_box nav.globalMenuSp ul .accordion_title {
   position: relative;
   text-align: center;
   transition: all 0.4s;
+  color: #555;
 }
 header .first_header .hamburger_box nav.globalMenuSp ul .accordion_title:before {
   position: absolute;
@@ -161,6 +162,7 @@ header .first_header .hamburger_box nav.globalMenuSp ul .accordion_title:before 
   font-family: "Font Awesome 5 Free";
   content: "\f067";
   font-size: 24px;
+  color: #000;
 }
 header .first_header .hamburger_box nav.globalMenuSp ul .open:before {
   color: #E4405F;
@@ -485,6 +487,9 @@ body main .shops img {
 }
 body main .shops .sponsor {
   padding: 0 0 32px;
+}
+body main .shops .sponsor img {
+  width: 60%;
 }
 body .contents {
   margin: 0 auto;

@@ -179,6 +179,7 @@ header {
               position: relative;
               text-align: center; 
               transition: all .4s;
+              color: #555;
               &:before {
                 position: absolute;
                 top: 8px;
@@ -186,6 +187,7 @@ header {
                 font-family: "Font Awesome 5 Free";
                 content: '\f067';
                 font-size: 24px;
+                color: #000;
               }
             }
             .open {
@@ -514,6 +516,9 @@ body {
       }
       .sponsor {
         padding: 0 0 32px;
+        img {
+          width: 60%;
+        }
       }
     }
   } 
