@@ -109,7 +109,11 @@ header {
         }
       }
       nav {
-        height: 100vh;
+        height: 100%;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
         &.globalMenuSp {
           position: fixed;
           z-index : 2;
@@ -151,8 +155,9 @@ header {
           }
         }
         footer {
+          margin-top: auto;
           width: 100%;
-          position: absolute;
+          position: relative;
           bottom: 0;
         }
       }

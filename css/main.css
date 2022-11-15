@@ -82,7 +82,11 @@ header .first_header .hamburger_box .hamburger.active span:nth-child(3) {
   transform: translateY(-16px) rotate(90deg);
 }
 header .first_header .hamburger_box nav {
-  height: 100vh;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 header .first_header .hamburger_box nav.globalMenuSp {
   position: fixed;
@@ -126,8 +130,9 @@ header .first_header .hamburger_box nav.globalMenuSp.active {
   transform: translateX(0%);
 }
 header .first_header .hamburger_box nav footer {
+  margin-top: auto;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
