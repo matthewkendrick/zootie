@@ -82,6 +82,8 @@ body .contents .eventItems {
   width: 360px;
   border-radius: 160px;
   overflow: scroll;
+  box-shadow: inset 6px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 999;
 }
 body .contents .eventItems img {
   width: 200px;
@@ -91,10 +93,10 @@ body .contents .eventItems img {
   transition: all 0.4s;
   -o-object-fit: contain;
      object-fit: contain;
+  z-index: -999;
 }
 body .contents .eventItems img:hover {
   opacity: 0.8;
-  transform: rotateY(360deg);
 }
 body .sns {
   display: flex;
