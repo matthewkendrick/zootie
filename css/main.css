@@ -557,6 +557,9 @@ body .contents {
 body .contents .contentsItem {
   min-height: 240px;
 }
+body .contents .ranking {
+  min-height: 600px;
+}
 body .contents .newItem {
   background: #bd979f;
 }
