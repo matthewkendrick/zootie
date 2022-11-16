@@ -290,13 +290,17 @@ header {
   width: 100vw;
   height: 100vh;
   // background-color: #5B718F; /*背景色*/
-  background-color: #bd979f;
+  // background-color: #bd979f;
+  background-color: #000;
   z-index: 9999;
   animation: fadeOut 0.4s forwards;
   animation-delay: 1.8s;
   img {
     position: absolute;
     width: 240px;
+    background: #fff;
+    border-radius: 48px;
+    padding: 8px 32px;
     // height: 160px;
     top: 0;
     bottom: 0;

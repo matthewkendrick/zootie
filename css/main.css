@@ -257,7 +257,7 @@ header .first_header .hamburger_box nav footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #bd979f;
+  background-color: #000;
   z-index: 9999;
   -webkit-animation: fadeOut 0.4s forwards;
           animation: fadeOut 0.4s forwards;
@@ -267,6 +267,9 @@ header .first_header .hamburger_box nav footer {
 .mask img {
   position: absolute;
   width: 240px;
+  background: #fff;
+  border-radius: 48px;
+  padding: 8px 32px;
   top: 0;
   bottom: 0;
   left: 0;
