@@ -100,7 +100,7 @@ body .contents .eventItems img:hover {
 }
 body .sns {
   display: flex;
-  margin: 32px auto;
+  margin: 0 auto 32px;
 }
 body .sns .snsItem {
   margin: 0 16px;

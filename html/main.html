@@ -56,6 +56,37 @@
                 </div>
               </div>
             </li>
+            <section class="styleSearch">
+              <div class="searchItem">
+                <div class="icon"><a href=""><i class="bi bi-person-badge"></i></a></div>
+                <div class="name">スタッフ<br>コーディネート</div>
+              </div>
+              <div class="searchItem">
+                <div class="icon"><a href=""><i class="bi bi-camera2"></i></a></div>
+                <div class="name">スタイルブック</div>
+              </div>
+              <div class="searchItem">
+                <div class="icon"><a href=""><i class="bi bi-journals"></i></a></div>
+                <div class="name">洋服と着こなしの<br>教科書</div>
+              </div>
+            </section>
+            <section class="news">
+              <div class="title">
+                <p>お知らせ</p>
+                <p>news</p>
+                <p class="border"></p>
+              </div>
+              <div class="information">
+                <div class="infoItem">
+                  <span class="date">2022.11.4</span><br>
+                  <span class="text">発送についてのご案内</span>
+                </div>
+                <div class="infoItem">
+                  <span class="date">2022.9.26</span><br>
+                  <span class="text">原材料高騰による一部商品価格改定のお知らせ</span>
+                </div>
+              </div>
+            </section>
             <script src="../js/accordion.js"></script>
           </div>
         </ul>
@@ -119,10 +150,10 @@
     <section class="search">
       <div class="search_header">
         <ul>
-          <li>新作<span class="hidden">アイテム</span></li>
-          <li>再入荷<span class="hidden">アイテム</span></li>
-          <li>カテゴリ</li>
-          <li>ランキング</li>
+          <li><a href="#newItem">新作<span class="hidden">アイテム</span></a></li>
+          <li class="centerItem">再入荷<span class="hidden">アイテム</span></li>
+          <li class="centerItem">カテゴリ</li>
+          <li><a href="#ranking">ランキング</a></li>
           <li class="hidden">お買い物ガイド</li>
         </ul>
       </div>
@@ -136,17 +167,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="information">
-      <div class="infoItem">
-        <span class="date">2022.11.4</span><br>
-        <span class="text">発送についてのご案内</span>
-      </div>
-      <div class="infoItem">
-        <span class="date">2022.9.26</span><br>
-        <span class="text">原材料高騰による一部商品価格改定のお知らせ</span>
-      </div>
-    </section> -->
 
     <p class="stylingMore">
       <a href="">\ コーディネートをもっと見る /</a>
@@ -169,14 +189,14 @@
 
     <section>
       <div class="contents">
-        <div class="contentsItem ranking">
+        <div id="ranking" class="contentsItem ranking">
           <div class="title">
             <p>人気ランキング</p>
             <p>ranking</p>
             <p class="border"></p>
           </div>
         </div>
-        <div class="contentsItem newItem">
+        <div id="newItem" class="contentsItem newItem">
           <div class="title">
             <p>新作アイテム</p>
             <p>new arrival</p>
