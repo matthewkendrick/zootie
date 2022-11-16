@@ -269,7 +269,7 @@ header .first_header .hamburger_box nav footer {
   width: 240px;
   background: #fff;
   border-radius: 48px;
-  padding: 8px 32px;
+  padding: 16px 48px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -307,7 +307,7 @@ header .first_header .hamburger_box nav footer {
     transform: scale(0.9);
   }
   100% {
-    transform: scale(18);
+    transform: scale(24);
   }
 }
 @keyframes rotation {
@@ -321,7 +321,7 @@ header .first_header .hamburger_box nav footer {
     transform: scale(0.9);
   }
   100% {
-    transform: scale(18);
+    transform: scale(24);
   }
 }
 
