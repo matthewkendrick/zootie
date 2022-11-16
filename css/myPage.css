@@ -113,6 +113,10 @@ body .sns .snsItem img {
   width: 48px;
   height: 48px;
 }
+body .sns .snsItem i:hover,
+body .sns .snsItem img:hover {
+  color: #555;
+}
 
 footer {
   margin-top: auto;
