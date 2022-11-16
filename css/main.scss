@@ -283,6 +283,53 @@ header {
   }
 }
 
+.mask {
+  position: fixed; /*固定表示*/
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  // background-color: #5B718F; /*背景色*/
+  background-color: #bd979f;
+  z-index: 9999;
+  animation: fadeOut 0.4s forwards;
+  animation-delay: 1.8s;
+  img {
+    position: absolute;
+    width: 240px;
+    // height: 160px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: rotation 2s forwards;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes rotation {
+    20%{
+      transform: scale(1.1);
+    }
+    40%{
+      transform: scale(0.9);
+    }
+    80%{
+      transform: scale(0.9);
+    }
+    100%{
+      transform: scale(18);
+    }
+  }
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;

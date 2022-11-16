@@ -251,6 +251,77 @@ header .first_header .hamburger_box nav footer {
   bottom: 0;
 }
 
+.mask {
+  position: fixed; /*固定表示*/
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #bd979f;
+  z-index: 9999;
+  -webkit-animation: fadeOut 0.4s forwards;
+          animation: fadeOut 0.4s forwards;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.mask img {
+  position: absolute;
+  width: 240px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: rotation 2s forwards;
+          animation: rotation 2s forwards;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes rotation {
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(18);
+  }
+}
+@keyframes rotation {
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(18);
+  }
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
