@@ -108,9 +108,39 @@ header .first_header .hamburger_box nav.globalMenuSp {
   width: 100%;
 }
 header .first_header .hamburger_box nav.globalMenuSp ul {
-  margin: 48px auto;
+  margin: 0 auto 48px;
   padding: 0;
   width: 100%;
+}
+header .first_header .hamburger_box nav.globalMenuSp ul .balloon3-right-btm {
+  position: relative;
+  top: 24px;
+  left: 280px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  padding: 0 4px;
+  background-color: #a58eff;
+  font-family: Chalkduster;
+  transform: rotate(8deg);
+}
+header .first_header .hamburger_box nav.globalMenuSp ul .balloon3-right-btm:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 2px;
+  bottom: 2px;
+  border-right: 20px solid #a58eff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transform: rotate(-45deg);
 }
 header .first_header .hamburger_box nav.globalMenuSp ul li {
   max-width: 800px;
@@ -609,20 +639,27 @@ body main .shops .shop {
 body main .shops .shop .describe {
   text-align: left;
   padding: 0 16px;
-  font-size: 14px;
+  font-size: 3vmin;
   line-height: 2;
 }
 body main .shops .shop .describe .name {
   font-weight: bold;
-  font-size: 18px;
+}
+body main .shops .border {
+  width: 80%;
+  border: 1px solid #000;
+  border-radius: 32px;
+  margin: 0 auto 32px;
 }
 body main .shops img {
-  width: 40%;
+  width: 30%;
 }
-body main .shops .sponsor {
+body .sponsor {
   padding: 0 0 32px;
+  text-align: center;
 }
-body main .shops .sponsor img {
+body .sponsor img {
+  max-width: 320px;
   width: 60%;
 }
 body .contents {
