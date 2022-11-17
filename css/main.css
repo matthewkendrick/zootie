@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", sans-serif;
 }
 *::-webkit-scrollbar {
@@ -269,7 +270,7 @@ header .first_header .hamburger_box nav footer {
   width: 240px;
   background: #fff;
   border-radius: 48px;
-  padding: 16px 48px;
+  padding: 16px 32px;
   top: 0;
   bottom: 0;
   left: 0;
