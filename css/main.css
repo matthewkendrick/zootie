@@ -115,7 +115,7 @@ header .first_header .hamburger_box nav.globalMenuSp ul {
 header .first_header .hamburger_box nav.globalMenuSp ul .balloon3-right-btm {
   position: relative;
   top: 24px;
-  left: 280px;
+  left: 56%;
   width: 100px;
   height: 100px;
   line-height: 100px;
@@ -792,7 +792,7 @@ body .contentLast {
 }
 
 footer {
-  margin-top: auto;
+  margin: auto;
   padding: 24px 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
