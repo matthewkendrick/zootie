@@ -22,6 +22,7 @@
 }
 
 header {
+  vertical-align: middle;
   .first_header {
     display: flex;
     position: fixed;
@@ -29,35 +30,40 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: fit-content;
     box-sizing: border-box;
     background: #fff;
-    padding: 16px 0 8px;
+    padding: 16px;
     .logo {
       text-align: center;
       justify-content: center;
-      align-items: center;
+      vertical-align: middle;
       margin: 0 auto;
+      width: 40%;
       img {
-        width: 160px;
-        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        vertical-align: middle;
       }
     }
     .cart {
-      position: absolute;
-      top: 8px;
-      right: 10px;
-      font-size: 32px;
+      height: auto;
+      // position: fixed;
+      // right: 16px;
+      font-size: 6vmin;
+      vertical-align: middle;
       a {
         color: #000;
       }
     }
     .hamburger_box {
+      height: auto;
       .hamburger {
         display : block;
         position: fixed;
         z-index : 3;
-        left : 13px;
-        top   : 8px;
+        // left : 16px;
         width : 24px;
         height: 24px;
         cursor: pointer;
@@ -65,21 +71,21 @@ header {
         span {
           display : block;
           position: absolute;
-          width   : 30px;
-          height  : 4px;
+          width   : 6vmin;
+          height  : 1vmin;
           border-radius: 16px;
           background : #555;
           -webkit-transition: 0.3s ease-in-out;
           -moz-transition   : 0.3s ease-in-out;
           transition        : 0.3s ease-in-out;
           &:nth-child(1) {
-            top: 10px;
+            top: 0px;
           }
           &:nth-child(2) {
-            top: 20px;
+            top: 10px;
           }
           &:nth-child(3) {
-            top: 30px;
+            top: 20px;
           }
         }
         &.active {
@@ -810,7 +816,7 @@ footer {
   letter-spacing: 2px;
   font-size: 9px;
   a {
-    font-size: 9px;
+    // font-size: 9px;
     text-decoration: none;
     color: #fff;
   }

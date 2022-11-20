@@ -15,6 +15,9 @@
   width: auto;
 }
 
+header {
+  vertical-align: middle;
+}
 header .first_header {
   display: flex;
   position: fixed;
@@ -22,35 +25,41 @@ header .first_header {
   top: 0;
   left: 0;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   box-sizing: border-box;
   background: #fff;
-  padding: 16px 0 8px;
+  padding: 16px;
 }
 header .first_header .logo {
   text-align: center;
   justify-content: center;
-  align-items: center;
+  vertical-align: middle;
   margin: 0 auto;
+  width: 40%;
 }
 header .first_header .logo img {
-  width: 160px;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  vertical-align: middle;
 }
 header .first_header .cart {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  font-size: 32px;
+  height: auto;
+  font-size: 6vmin;
+  vertical-align: middle;
 }
 header .first_header .cart a {
   color: #000;
+}
+header .first_header .hamburger_box {
+  height: auto;
 }
 header .first_header .hamburger_box .hamburger {
   display: block;
   position: fixed;
   z-index: 3;
-  left: 13px;
-  top: 8px;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -59,20 +68,20 @@ header .first_header .hamburger_box .hamburger {
 header .first_header .hamburger_box .hamburger span {
   display: block;
   position: absolute;
-  width: 30px;
-  height: 4px;
+  width: 6vmin;
+  height: 1vmin;
   border-radius: 16px;
   background: #555;
   transition: 0.3s ease-in-out;
 }
 header .first_header .hamburger_box .hamburger span:nth-child(1) {
-  top: 10px;
+  top: 0px;
 }
 header .first_header .hamburger_box .hamburger span:nth-child(2) {
-  top: 20px;
+  top: 10px;
 }
 header .first_header .hamburger_box .hamburger span:nth-child(3) {
-  top: 30px;
+  top: 20px;
 }
 header .first_header .hamburger_box .hamburger.active {
   transition: all 0.3s ease-in-out;
@@ -806,7 +815,6 @@ footer {
   font-size: 9px;
 }
 footer a {
-  font-size: 9px;
   text-decoration: none;
   color: #fff;
 }
